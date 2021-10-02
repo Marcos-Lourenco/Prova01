@@ -1,0 +1,10 @@
+C:\Users\Marcos\source\repos\ProvaProgramação\obj\Debug\ProvaProgramação.csproj.AssemblyReference.cache
+C:\Users\Marcos\source\repos\ProvaProgramação\obj\Debug\ProvaProgramação.Form1.resources
+C:\Users\Marcos\source\repos\ProvaProgramação\obj\Debug\ProvaProgramação.Properties.Resources.resources
+C:\Users\Marcos\source\repos\ProvaProgramação\obj\Debug\ProvaProgramação.csproj.GenerateResource.cache
+C:\Users\Marcos\source\repos\ProvaProgramação\obj\Debug\ProvaProgramação.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\source\repos\ProvaProgramação\bin\Debug\ProvaProgramação.exe.config
+C:\Users\Marcos\source\repos\ProvaProgramação\bin\Debug\ProvaProgramação.exe
+C:\Users\Marcos\source\repos\ProvaProgramação\bin\Debug\ProvaProgramação.pdb
+C:\Users\Marcos\source\repos\ProvaProgramação\obj\Debug\ProvaProgramação.exe
+C:\Users\Marcos\source\repos\ProvaProgramação\obj\Debug\ProvaProgramação.pdb
