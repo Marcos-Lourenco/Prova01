@@ -21,7 +21,7 @@ namespace ProvaProgramação
 
         public static void LetraVirgula(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 44)
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 44) 
                 e.Handled = true;
         }
     }

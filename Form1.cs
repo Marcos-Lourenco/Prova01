@@ -21,46 +21,73 @@ namespace ProvaProgramação
         private void btAdicao_Click(object sender, EventArgs e)
         
         {
-            double num1 = Convert.ToDouble(numero1.Text);
-            double num2 = Convert.ToDouble(numero2.Text);
-            string result = (num1 + num2).ToString();
-            lbresultado.Text = result;
+            if (numero1.Text != "" && numero2.Text != "")
+            {
+                double num1 = Convert.ToDouble(numero1.Text);
+                double num2 = Convert.ToDouble(numero2.Text);
+                string result = (num1 + num2).ToString();
+                lbresultado.Text = result;
+            }
+            else
+            {
+                lbresultado.Text = "Campo vazio";
+            }
         }
 
         private void btSubtracao_Click(object sender, EventArgs e)
         {
-            double num1 = Convert.ToDouble(numero1.Text);
-            double num2 = Convert.ToDouble(numero2.Text);
-            string result = (num1 - num2).ToString();
-            lbresultado.Text = result;
+            if (numero1.Text != "" && numero2.Text != "")
+            {
+                double num1 = Convert.ToDouble(numero1.Text);
+                double num2 = Convert.ToDouble(numero2.Text);
+                string result = (num1 - num2).ToString();
+                lbresultado.Text = result;
+            }
+            else 
+            {
+                lbresultado.Text = "Campo vazio";
+            }
         }
 
         private void btMultiplicacao_Click(object sender, EventArgs e)
         {
-            double num1 = Convert.ToDouble(numero1.Text);
-            double num2 = Convert.ToDouble(numero2.Text);
-            string result = (num1 * num2).ToString();
-            lbresultado.Text = result;
+            if (numero1.Text != "" && numero2.Text != "")
+            {
+                double num1 = Convert.ToDouble(numero1.Text);
+                double num2 = Convert.ToDouble(numero2.Text);
+                string result = (num1 * num2).ToString();
+                lbresultado.Text = result;
+            }
+            else
+            {
+                lbresultado.Text = "Campo vazio";
+            }
         }
 
         private void btDivisao_Click(object sender, EventArgs e)
         {
-            if (numero2.Text != "0")
+            if (numero1.Text != "" && numero2.Text != "")
             {
-                double num1 = Convert.ToDouble(numero1.Text);
-                double num2 = Convert.ToDouble(numero2.Text);
-                string result = (num1 / num2).ToString();
-                lbresultado.Text = result;
+                if (numero2.Text != "0")
+                {
+                    double num1 = Convert.ToDouble(numero1.Text);
+                    double num2 = Convert.ToDouble(numero2.Text);
+                    string result = (num1 / num2).ToString();
+                    lbresultado.Text = result;
 
+                }
+                else
+                {
+                    lbresultado.Text = "Não pode dividir por 0!";
+                }
             }
             else
             {
-                lbresultado.Text = "Não pode dividir por 0!";
+                lbresultado.Text = "Campo vazio";
             }
-           
         }
 
-        private void numero1_TextChanged(object sender, EventArgs e)
+            private void numero1_TextChanged(object sender, EventArgs e)
         {
 
         }
