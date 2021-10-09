@@ -68,6 +68,8 @@ namespace ProvaProgramação
             this.numero1.Name = "numero1";
             this.numero1.Size = new System.Drawing.Size(374, 30);
             this.numero1.TabIndex = 2;
+            this.numero1.TextChanged += new System.EventHandler(this.numero1_TextChanged);
+            this.numero1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numero1_KeyPress);
             // 
             // numero2
             // 
@@ -76,6 +78,7 @@ namespace ProvaProgramação
             this.numero2.Name = "numero2";
             this.numero2.Size = new System.Drawing.Size(374, 30);
             this.numero2.TabIndex = 3;
+            this.numero2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numero2_KeyPress);
             // 
             // btAdicao
             // 

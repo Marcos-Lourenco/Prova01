@@ -19,6 +19,7 @@ namespace ProvaProgramação
 
 
         private void btAdicao_Click(object sender, EventArgs e)
+        
         {
             double num1 = Convert.ToDouble(numero1.Text);
             double num2 = Convert.ToDouble(numero2.Text);
@@ -44,10 +45,34 @@ namespace ProvaProgramação
 
         private void btDivisao_Click(object sender, EventArgs e)
         {
-            double num1 = Convert.ToDouble(numero1.Text);
-            double num2 = Convert.ToDouble(numero2.Text);
-            string result = (num1 / num2).ToString();
-            lbresultado.Text = result;
+            if (numero2.Text != "0")
+            {
+                double num1 = Convert.ToDouble(numero1.Text);
+                double num2 = Convert.ToDouble(numero2.Text);
+                string result = (num1 / num2).ToString();
+                lbresultado.Text = result;
+
+            }
+            else
+            {
+                lbresultado.Text = "Não pode dividir por 0!";
+            }
+           
+        }
+
+        private void numero1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numero1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Program.LetraVirgula(sender, e);
+        }
+
+        private void numero2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Program.LetraVirgula(sender, e);
         }
     }
 }
